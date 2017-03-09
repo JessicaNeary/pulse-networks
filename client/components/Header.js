@@ -4,10 +4,13 @@ import { Link } from 'react-router'
 const Header = () => {
   return(
     <div className='header'>
-      <Link to='/'>Home</Link>
-      <Link to='/services'>Services</Link>
-      <Link to='/projects'>Projects</Link>
-      <Link to='/contact'>Contact</Link>
+      <ul>
+        <li className='title'><h2>Pulse Networks</h2></li>
+        <li><Link className='tab' to='/'>Home</Link></li>
+        <li><Link className='tab' to='/services'>Services</Link></li>
+        <li><Link className='tab' to='/projects'>Projects</Link></li>
+        <li><Link className='tab' to='/contact'>Contact</Link></li>
+      </ul>
     </div>
   )
 }

@@ -7,8 +7,7 @@ export default React.createClass({
     return (
       <div>
         <Header />
-        <h1>Pulse Networks</h1>
-        <embed src="/pulsenetworks_banner.swf"></embed>
+        <embed className='banner' src='/pulsenetworks_banner.swf' />
         {this.props.children}
       </div>
     )
