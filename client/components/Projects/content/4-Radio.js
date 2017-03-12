@@ -1,7 +1,7 @@
 import React from 'react'
 
 const Radio = () => {
-  return(
+  return (
     <div>
       <h5 className='subtitle'>Radio</h5>
       <p>

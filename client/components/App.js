@@ -1,6 +1,10 @@
 import React from 'react'
 
 import Header from './Header'
+import Home from './Home'
+import Services from './Services'
+import Projects from './Projects'
+import Contact from './Contact'
 
 export default React.createClass({
   render () {
@@ -8,7 +12,10 @@ export default React.createClass({
       <div>
         <Header />
         <embed className='banner' src='/pulsenetworks_banner.swf' />
-        {this.props.children}
+        <Home />
+        <Services />
+        <Projects />
+        <Contact />
       </div>
     )
   }

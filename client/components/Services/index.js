@@ -7,9 +7,8 @@ export default React.createClass({
   render() {
     return(
       <div className='services'>
-        <Link to='/services'>
-          <h1 className='title'>Services</h1>
-        </Link>
+        <a id='services' className='smooth' />
+        <h1 className='title'>Services</h1>
 
         <Main />
 

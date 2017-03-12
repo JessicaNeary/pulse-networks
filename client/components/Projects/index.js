@@ -3,7 +3,8 @@ import { Link } from 'react-router'
 
 const Projects = props => {
   return(
-    <div className='Projects'>
+    <div className='projects'>
+      <a id='projects' className='smooth' />
       <Link to='projects'>
         <h1 className='title'>Projects</h1>
       </Link>
