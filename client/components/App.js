@@ -13,8 +13,6 @@ export default React.createClass({
         <Header />
         <embed className='banner' src='/pulsenetworks_banner.swf' />
         <Home />
-        <Services />
-        <Projects />
         <Contact />
       </div>
     )
