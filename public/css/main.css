@@ -10,13 +10,11 @@ html {
   background: -moz-linear-gradient(#30385F, #000000);
   /* For Firefox 3.6 to 15 */
   background: linear-gradient(#30385F, #000000);
-  /* Standard syntax */ }
+  /* Standard syntax */
+  width: 916px;
+  margin: auto; }
 
 body {
-  margin: auto;
-  width: 916px;
-  height: 100%;
-  font-size: 1em;
   text-align: center;
   color: white;
   font-family: 'Oswald', sans-serif; }
@@ -54,4 +52,21 @@ body {
     margin-top: 0; }
   .home .body {
     width: 80%;
+    color: lightGrey;
+    font-size: 1.03em;
+    line-height: 1.3em; }
+
+.footer {
+  width: 100%;
+  position: absolute;
+  bottom: 0;
+  margin-top: 50px;
+  border-top: 1px solid white;
+  display: flex;
+  justify-content: space-between;
+  font-size: 0.8em; }
+  .footer a {
+    text-decoration: none;
     color: lightGrey; }
+    .footer a:hover {
+      text-decoration: underline; }

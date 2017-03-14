@@ -2,9 +2,9 @@ import React from 'react'
 
 const Footer = () => {
   return (
-    <div className='header'>
+    <div className='footer'>
       <p>Copyright © 2010. Pulse Networks.</p>
-      <p>Site created by
+      <p>Website created by
         <a href='https://github.com/JessicaNeary'> Jessica Neary</a>
       </p>
     </div>
