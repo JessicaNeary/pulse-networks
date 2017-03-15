@@ -5,7 +5,7 @@ const Footer = () => {
     <div className='footer'>
       <p>Copyright © 2010. Pulse Networks.</p>
       <p>Website created by
-        <a href='https://github.com/JessicaNeary'> Jessica Neary</a>
+        <a className='link' href='https://github.com/JessicaNeary'> Jessica Neary</a>
       </p>
     </div>
   )

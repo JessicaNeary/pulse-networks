@@ -1,15 +1,17 @@
+/* Variables */
+/* All pages */
 html {
   min-height: 100%;
   position: relative;
   background: #30385F;
   /* For browsers that do not support gradients */
-  background: -webkit-linear-gradient(#30385F, #000000);
+  background: -webkit-linear-gradient(#30385F, black);
   /* For Safari 5.1 to 6.0 */
-  background: -o-linear-gradient(#30385F, #000000);
+  background: -o-linear-gradient(#30385F, black);
   /* For Opera 11.1 to 12.0 */
-  background: -moz-linear-gradient(#30385F, #000000);
+  background: -moz-linear-gradient(#30385F, black);
   /* For Firefox 3.6 to 15 */
-  background: linear-gradient(#30385F, #000000);
+  background: linear-gradient(#30385F, black);
   /* Standard syntax */
   width: 916px;
   margin: auto; }
@@ -17,15 +19,26 @@ html {
 body {
   text-align: center;
   color: white;
-  font-family: 'Oswald', sans-serif; }
+  font-family: "Oswald", sans-serif; }
 
 .body {
-  font-family: 'Roboto Condensed', sans-serif; }
+  font-family: "Roboto Condensed", sans-serif;
+  color: lightGrey;
+  font-size: 1.03em;
+  line-height: 1.3em; }
 
 .banner {
   width: 100%;
   height: 152px; }
 
+.link, .header .tab {
+  color: white;
+  text-decoration: none; }
+  .link:hover, .header .tab:hover {
+    color: lightGrey;
+    text-decoration: underline; }
+
+/* Header */
 .header ul {
   list-style-type: none;
   padding-top: 15px;
@@ -34,13 +47,9 @@ body {
   align-items: flex-end; }
 
 .header .tab {
-  color: white;
-  width: 60px;
-  text-decoration: none; }
-  .header .tab:hover {
-    color: lightGrey;
-    text-decoration: underline; }
+  width: 60px; }
 
+/* Home page */
 .home {
   margin-left: 20%;
   text-align: left; }
@@ -51,22 +60,23 @@ body {
     margin-bottom: 0;
     margin-top: 0; }
   .home .body {
-    width: 80%;
-    color: lightGrey;
-    font-size: 1.03em;
-    line-height: 1.3em; }
+    width: 80%; }
 
+/* Services page */
+.services .body {
+  width: 90%; }
+
+.services .nav {
+  display: flex;
+  justify-content: space-around; }
+
+/* Footer */
 .footer {
   width: 100%;
   position: absolute;
   bottom: 0;
   margin-top: 50px;
-  border-top: 1px solid white;
+  border-top: 1px solid lightGrey;
   display: flex;
   justify-content: space-between;
   font-size: 0.8em; }
-  .footer a {
-    text-decoration: none;
-    color: lightGrey; }
-    .footer a:hover {
-      text-decoration: underline; }
