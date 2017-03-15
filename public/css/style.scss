@@ -78,23 +78,33 @@ body {
 }
 
 /* Services page */
-.services {
+.services, .projects {
+  .title {
+    padding-top: 15px;
+  }
   .body {
     margin: auto;
     width: 90%;
   }
   .nav {
+    width: 100%;
+    font-size: 2em;
     display: flex;
+    flex-wrap: wrap;
     justify-content: space-around;
+  }
+  .link {
+    padding: 10px 30px;
+    flex: content;
   }
 }
 
 /* Footer */
 .footer {
   width: 100%;
-  position: absolute;
+  position: relative;
   bottom: 0;
-  margin-top: 50px;
+  margin-top: 40px;
   border-top: 1px solid lightGrey;
   display: flex;
   justify-content: space-between;

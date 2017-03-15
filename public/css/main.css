@@ -61,20 +61,30 @@ body {
     width: 80%; }
 
 /* Services page */
-.services .body {
+.services .title, .projects .title {
+  padding-top: 15px; }
+
+.services .body, .projects .body {
   margin: auto;
   width: 90%; }
 
-.services .nav {
+.services .nav, .projects .nav {
+  width: 100%;
+  font-size: 2em;
   display: flex;
+  flex-wrap: wrap;
   justify-content: space-around; }
+
+.services .link, .services .header .tab, .header .services .tab, .projects .link, .projects .header .tab, .header .projects .tab {
+  padding: 10px 30px;
+  flex: content; }
 
 /* Footer */
 .footer {
   width: 100%;
-  position: absolute;
+  position: relative;
   bottom: 0;
-  margin-top: 50px;
+  margin-top: 40px;
   border-top: 1px solid lightGrey;
   display: flex;
   justify-content: space-between;
