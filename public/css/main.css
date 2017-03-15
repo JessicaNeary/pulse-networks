@@ -8,7 +8,7 @@ html {
   background: -o-linear-gradient(#30385F, black);
   background: -moz-linear-gradient(#30385F, black);
   background: linear-gradient(#30385F, black);
-  width: 916px;
+  width: 67%;
   margin: auto; }
 
 body {
@@ -28,7 +28,7 @@ body {
   line-height: 1.3em; }
 
 .banner {
-  width: 100%;
+  width: 916px;
   height: 152px; }
 
 .link, .header .tab {
