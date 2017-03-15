@@ -65,19 +65,28 @@ body {
   padding-top: 15px; }
 
 .services .body, .projects .body {
-  margin: auto;
-  width: 90%; }
+  margin-left: 5%;
+  width: 90%;
+  padding-bottom: 20px; }
 
 .services .nav, .projects .nav {
-  width: 100%;
+  margin: auto;
+  width: 85%;
   font-size: 2em;
   display: flex;
-  flex-wrap: wrap;
+  flex-flow: row wrap;
   justify-content: space-around; }
-
-.services .link, .services .header .tab, .header .services .tab, .projects .link, .projects .header .tab, .header .projects .tab {
-  padding: 10px 30px;
-  flex: content; }
+  .services .nav .subheading, .projects .nav .subheading {
+    padding: 20px 20px 10px 20px; }
+    .services .nav .subheading img, .projects .nav .subheading img {
+      display: block;
+      margin: auto;
+      padding-top: 10px;
+      max-width: 30%; }
+    .services .nav .subheading .small, .projects .nav .subheading .small {
+      max-width: 38%; }
+    .services .nav .subheading .big, .projects .nav .subheading .big {
+      max-width: 23%; }
 
 /* Footer */
 .footer {
