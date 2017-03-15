@@ -1,8 +1,6 @@
-# react-boilerplate
+# Pulse Networks
 
-A simple boilerplate for a react application.
-
-Uses an express server, bundled with Webpack. Also uses nodemon, babel, and is equip with Tape and Enzyme for testing. 
+Website for Pulse Networks telecommunications engineering company
 
 ## Setup
 
