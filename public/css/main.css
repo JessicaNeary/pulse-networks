@@ -88,6 +88,18 @@ body {
     .services .nav .subheading .big, .projects .nav .subheading .big {
       max-width: 23%; }
 
+/* Contact Page */
+.contact {
+  padding: 25px 0px 5px 0px; }
+  .contact p {
+    padding: 40px 0px 15px 0px;
+    font-size: 1.7em; }
+  .contact li {
+    padding-top: 10px;
+    font-size: 1.1em;
+    margin-right: 40px;
+    list-style: none; }
+
 /* Footer */
 .footer {
   width: 100%;
