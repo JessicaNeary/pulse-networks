@@ -2,8 +2,7 @@ import React from 'react'
 
 const Planning = () => {
   return (
-    <div>
-      <img src='/images/services/Services1.jpg' />
+    <div className='content'>
       <p>
         You wouldn't go on holiday without booking accommodation; an Architect wouldn't build a house without consulting with a surveyor and the council. Why is it then that too many companies let their contractors loose to dig up the streets  without proper planning and design and then blame them when things go wrong.
       </p>

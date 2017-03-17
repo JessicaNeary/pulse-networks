@@ -2,8 +2,7 @@ import React from 'react'
 
 const Construction = () => {
   return (
-    <div>
-      <img src='/images/services/Services2.jpg' />
+    <div className='content'>
       <p>
         Pulse Networks provides a full civils construction service for building your outside plant network; this includes trenching, directional drilling, manholes, building entries and cable and microduct installation. All work is carried out to local authority code of practice and in compliance with the Health and Safety and Environment Act 2002.
       </p>

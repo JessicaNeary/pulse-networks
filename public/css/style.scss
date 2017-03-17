@@ -96,18 +96,31 @@ body {
     justify-content: space-around;
     .subheading {
       padding: 20px 20px 10px 20px;
-      img {
+      .icon {
         display: block;
-        margin: auto;
+        margin: 0 auto;
         padding-top: 10px;
         max-width: 30%;
+        .small {
+          max-width: 38%;
+        }
+        .big {
+          max-width: 23%;
+        }
       }
-      .small {
-        max-width: 38%;
-      }
-      .big {
-        max-width: 23%;
-      }
+    }
+  }
+  .expanded {
+    display: flex;
+    align-items: flex-start;
+    p {
+      margin-top: 8px;
+      padding-left: 15px;
+      font-family: $font-text;
+      font-size: 0.5em;
+      color: lightgrey;
+      line-height: 1.3em;
+      text-align: left;
     }
   }
 }

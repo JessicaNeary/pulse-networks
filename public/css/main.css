@@ -78,15 +78,27 @@ body {
   justify-content: space-around; }
   .services .nav .subheading, .projects .nav .subheading {
     padding: 20px 20px 10px 20px; }
-    .services .nav .subheading img, .projects .nav .subheading img {
+    .services .nav .subheading .icon, .projects .nav .subheading .icon {
       display: block;
-      margin: auto;
+      margin: 0 auto;
       padding-top: 10px;
       max-width: 30%; }
-    .services .nav .subheading .small, .projects .nav .subheading .small {
-      max-width: 38%; }
-    .services .nav .subheading .big, .projects .nav .subheading .big {
-      max-width: 23%; }
+      .services .nav .subheading .icon .small, .projects .nav .subheading .icon .small {
+        max-width: 38%; }
+      .services .nav .subheading .icon .big, .projects .nav .subheading .icon .big {
+        max-width: 23%; }
+
+.services .expanded, .projects .expanded {
+  display: flex;
+  align-items: flex-start; }
+  .services .expanded p, .projects .expanded p {
+    margin-top: 8px;
+    padding-left: 15px;
+    font-family: "Roboto Condensed", sans-serif;
+    font-size: 0.5em;
+    color: lightgrey;
+    line-height: 1.3em;
+    text-align: left; }
 
 /* Contact Page */
 .contact {
