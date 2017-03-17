@@ -1,7 +1,7 @@
 import React from 'react'
 
 const Main = () => {
-  return(
+  return (
     <div className='body'>
       <p>
         Pulse Networks provides a suite of services aimed at proving a complete end to end solution for our clients; these range from planning and design through to installation and commissioning. The client has the option to choose a full turnkey solution or select individual services to augment their own resources.

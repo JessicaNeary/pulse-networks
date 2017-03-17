@@ -2,7 +2,7 @@ import React from 'react'
 import { Link } from 'react-router'
 
 const Projects = props => {
-  return(
+  return (
     <div className='projects'>
 
       <h1 className='title'>Projects</h1>

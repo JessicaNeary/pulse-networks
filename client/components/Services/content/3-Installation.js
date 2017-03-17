@@ -1,9 +1,9 @@
 import React from 'react'
 
 const Installation = () => {
-  return(
+  return (
     <div>
-      <h5 className='subtitle'>Installation</h5>
+      <img src='/images/services/Services3.jpg' />
       <p>
         Pulse Networks works to tight deadlines to 'lighten up' client customers; we know that time/ing is money and that the project doesn't start clawing back a return until the customer is connected. To this end our installers work hand in hand with our construction  crews to  provide a connection in the shortest possible time.
       </p>

@@ -25,11 +25,11 @@ document.addEventListener('DOMContentLoaded', () => {
         <Route path='/' component={App}>
           <IndexRoute component={Home} />
           <Route path='services' component={Services}>
-            <Route path='1' component={Planning} />
-            <Route path='2' component={Construction} />
-            <Route path='3' component={Installation} />
-            <Route path='4' component={Build} />
-            <Route path='5' component={ProjectManagement} />
+            <Route path='1' component={{planning: Planning}} />
+            <Route path='2' component={{construct: Construction}} />
+            <Route path='3' component={{install: Installation}} />
+            <Route path='4' component={{build: Build}} />
+            <Route path='5' component={{project: ProjectManagement}} />
           </Route>
           <Route path='projects' component={Projects}>
             <Route path='1' component={Fibre} />
