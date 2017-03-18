@@ -48,14 +48,12 @@ body {
 
 /* Header */
 .header ul {
+  margin-right: 5%;
   list-style-type: none;
   padding-top: 15px;
   display: flex;
   justify-content: space-around;
   align-items: flex-end; }
-
-.header .tab {
-  width: 60px; }
 
 /* Home page */
 .home {
@@ -73,8 +71,8 @@ body {
   padding-top: 15px; }
 
 .services .body, .projects .body {
-  margin-left: 5%;
-  width: 90%;
+  margin-left: 12%;
+  width: 76%;
   padding-bottom: 20px; }
 
 .services .nav, .projects .nav {
