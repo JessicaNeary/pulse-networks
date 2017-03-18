@@ -8,12 +8,11 @@ html {
   background: -o-linear-gradient(#30385F, black);
   background: -moz-linear-gradient(#30385F, black);
   background: linear-gradient(#30385F, black);
-  width: 67%;
+  width: 916px;
   margin: auto; }
-  @media (max-width: 1000px) {
+  @media (max-width: 916px) {
     html {
-      width: 100%;
-      background-color: white; } }
+      width: 100%; } }
 
 body {
   text-align: center;
@@ -32,8 +31,13 @@ body {
   line-height: 1.3em; }
 
 .banner {
-  width: 916px;
-  height: 152px; }
+  text-align: justify;
+  position: relative;
+  padding-bottom: 16.5%; }
+  .banner .image {
+    position: absolute;
+    width: 100%;
+    height: 100%; }
 
 .link, .header .tab {
   color: white;
