@@ -10,7 +10,8 @@
     "watch": "nodemon --watch server server/index & webpack --watch",
     "test": "tape -r babel-register 'test/**/*.test.js' | tap-spec",
     "start": "node server/index",
-    "build-css": "node-sass -w public/css/style.scss public/css/main.css"
+    "build-css": "node-sass -w public/css/style.scss public/css/main.css",
+    "heroku-postbuild": "webpack -p --config ./webpack.config.js --progress"
   },
   "babel": {
     "presets": [
