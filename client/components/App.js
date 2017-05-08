@@ -9,7 +9,7 @@ export default React.createClass({
       <div>
         <Header />
         <div className='banner'>
-          <embed className='image' src='/pulsenetworks_banner.swf' />
+          <object type="image/svg+xml" data="PulseBanner.svg"></object>
         </div>
         <div className='pages'>
           {this.props.children}
