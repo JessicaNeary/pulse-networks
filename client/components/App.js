@@ -9,7 +9,7 @@ export default React.createClass({
       <div>
         <Header />
         <div className='banner'>
-          <object type="image/svg+xml" data="PulseBanner.svg"></object>
+          <object type="image/svg+xml" data="PulseBanner_1_0.svg"></object>
         </div>
         <div className='pages'>
           {this.props.children}
