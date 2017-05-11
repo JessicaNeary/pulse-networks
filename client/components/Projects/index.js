@@ -19,16 +19,12 @@ const Projects = props => {
         </p>
       </div>
 
-      <div className='nav'>
-        <Link className='link' to='projects/1'>Fibre</Link>
-        <Link className='link' to='projects/2'>Telephony</Link>
-        <Link className='link' to='projects/3'>CATV</Link>
-        <Link className='link' to='projects/4'>Radio</Link>
-        <Link className='link' to='projects/5'>Other</Link>
-      </div>
-
-      <div className='content'>
-        {props.children}
+      <div className='docs'>
+        <a className='link' target='_blank' href='docs/2Degrees-Cell-Site-Design.pdf'>2Degrees Cell Site Planning and Design</a>
+        <a className='link' target='_blank' href='docs/PD-CTL-FTTH-Design-Rev2.pdf'>Citylink Auckland Fibre Network Design and Build</a>
+        <a className='link' target='_blank' href='docs/PD-VCL-MD-Install.pdf'>Vector Communications Microduct Installation</a>
+        <a className='link' target='_blank' href='docs/PD-ENL-Material-Supply.pdf'>Enable Networks Fibre Network Material Supply</a>
+        <a className='link' target='_blank' href='docs/PD-TSL-Fibre-Design.pdf'>Vodafone CBD Fibre Network Design</a>
       </div>
 
     </div>

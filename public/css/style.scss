@@ -1,5 +1,6 @@
 /* Variables */
 $primary-color: #30385F;
+$secondary-color: #c4c2c2;
 $font-heading: 'Oswald', sans-serif;
 $font-text: 'Roboto Condensed', sans-serif;
 
@@ -32,7 +33,7 @@ body {
 
 .body {
   font-family: $font-text;
-  color: lightGrey;
+  color: $secondary-color;
   font-size: 1.03em;
   line-height: 1.3em;
 }
@@ -53,7 +54,7 @@ body {
   color: white;
   text-decoration: none;
   &:hover {
-    color: lightGrey;
+    color: $secondary-color;
     text-decoration: underline;
   }
 }
@@ -128,10 +129,18 @@ body {
       padding-left: 15px;
       font-family: $font-text;
       font-size: 0.5em;
-      color: lightgrey;
+      color: $secondary-color;
       line-height: 1.3em;
       text-align: left;
     }
+  }
+}
+
+.projects {
+  a {
+    display: block;
+    font-size: 1.4em;
+    padding: 12px 0px;
   }
 }
 
@@ -155,7 +164,7 @@ body {
   position: relative;
   bottom: 0;
   margin-top: 40px;
-  border-top: 1px solid lightGrey;
+  border-top: 1px solid $secondary-color;
   padding: 0px 5px;
   display: flex;
   justify-content: space-between;
