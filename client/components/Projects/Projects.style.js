@@ -8,7 +8,7 @@ export const Title = styled.h1`
     color: #f7f7f7;
     font-family: "Oswald", sans-serif;
     font-size: 3rem;
-    margin: 0 0 30px 10px;
+    margin: 20px 0 30px 10px;
 `
 
 export const Text = styled.div`
@@ -25,6 +25,6 @@ export const Docs = styled.div`
     display: flex;
     flex-direction: column;
     height: 260px;
-    margin-top: 58px;
+    margin-top: 75px;
     justify-content: space-around;
 `
