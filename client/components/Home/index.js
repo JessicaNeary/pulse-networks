@@ -1,6 +1,6 @@
 import React from 'react'
 
-export default React.createClass({
+class Home extends React.Component{
   render () {
     return (
       <div className='home'>
@@ -16,4 +16,6 @@ export default React.createClass({
       </div>
     )
   }
-})
+};
+
+export default Home;

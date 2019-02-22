@@ -3,7 +3,7 @@ import { Link } from 'react-router'
 
 import Main from './Main.js'
 
-export default React.createClass({
+class Services extends React.Component{
   render () {
     return (
       <div className='services'>
@@ -51,4 +51,6 @@ export default React.createClass({
       </div>
     )
   }
-})
+};
+
+export default Services;
