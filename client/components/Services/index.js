@@ -1,56 +1,42 @@
-import React from 'react'
-import { Link } from 'react-router'
+import React from "react";
+import { Switch, Route } from "react-router-dom";
 
-import Main from './Main.js'
+import Planning from "./content/1-Planning";
+import Construction from "./content/2-Construction";
+import Installation from "./content/3-Installation";
+import Build from "./content/4-Build";
+import ProjectManagement from "./content/5-ProjectManagement";
+import { Container, SubHeading, Sections } from "./Services.style";
+import Main from "./Main.js";
 
-class Services extends React.Component{
-  render () {
-    return (
-      <div className='services'>
-        <h1 className='title'>Services</h1>
-
-        <Main />
-
-        <div className='nav'>
-          <div className='subheading'>
-            <Link className='link' to='/services/1'>Planning & Design</Link>
-            <div className='expanded'>
-              <img src='/images/services/presentation.svg' className='icon' />
-              {this.props.planning}
-            </div>
-          </div>
-          <div className='subheading'>
-            <Link className='link' to='/services/2'>Construction</Link>
-            <div className='expanded'>
-              <img src='/images/services/tools.svg' className='icon' />
-              {this.props.construct}
-            </div>
-          </div>
-          <div className='subheading'>
-            <Link className='link' to='/services/3'>Installation</Link>
-            <div className='expanded'>
-              <img src='/images/services/cone.svg' className='icon small' />
-              {this.props.install}
-            </div>
-          </div>
-          <div className='subheading'>
-            <Link className='link' to='/services/4'>As Builds & Drafting</Link>
-            <div className='expanded'>
-              <img src='/images/services/squares.svg' className='icon big' />
-              {this.props.build}
-            </div>
-          </div>
-          <div className='subheading'>
-            <Link className='link' to='/services/5'>Project Management</Link>
-            <div className='expanded'>
-              <img src='/images/services/folder.svg' className='icon big' />
-              {this.props.project}
-            </div>
-          </div>
-        </div>
-      </div>
-    )
+class Services extends React.Component {
+  componentWillMount() {
+    this.props.history.push("/services");
   }
-};
+  render() {
+    return (
+      <Container>
+        <Sections>
+          <SubHeading to={`/services/build`}>Products</SubHeading>
+          <SubHeading to={`/services/planning`}>Planning & Design</SubHeading>
+          <SubHeading to={`/services/construct`}>Construction</SubHeading>
+          <SubHeading to={`/services/install`}>Installation</SubHeading>
+          <SubHeading to={`/services/project`}>Projects Management</SubHeading>
+        </Sections>
+        <div>
+          <h1 className="title">Services</h1>
+          <Switch>
+            <Route exact path={`/services`} component={Main} />
+            <Route path={`/services/build`} component={Build} />
+            <Route path={`/services/planning`} component={Planning} />
+            <Route path={`/services/construct`} component={Construction} />
+            <Route path={`/services/install`} component={Installation} />
+            <Route path={`/services/project`} component={ProjectManagement} />
+          </Switch>
+        </div>
+      </Container>
+    );
+  }
+}
 
 export default Services;

@@ -3,7 +3,6 @@ import posed from "react-pose";
 
 export const Container = styled.div`
   position: relative;
-  top: 30px;
   height: 150px;
   overflow: hidden;
   margin-bottom: 30px;
