@@ -1,28 +1,54 @@
+import React from "react";
 import styled from "styled-components";
-import { Link } from "react-router-dom";
+import { NavLink } from "react-router-dom";
 import posed from "react-pose";
 
-import { linkStyles } from "../SharedStyles.style";
+import { Heading, linkStyles } from "../SharedStyles.style";
+
+const LinkTransition = posed.div({
+  enter: { y: 0, opacity: 1 },
+  exit: { y: 10, opacity: 0 }
+});
+
+const SectionsTransition = posed.div({
+  enter: { staggerChildren: 50 },
+  exit: { staggerChildren: 50 }
+});
 
 export const Container = styled.div`
   display: flex;
   justify-content: space-between;
 `;
 
-const SubHeadingTransition = posed.a({
-  enter: { y: 0, opacity: 1 },
-  exit: { y: 10, opacity: 0 }
-});
-
-export const SubHeading = styled(SubHeadingTransition)`
-  ${linkStyles}
-  font-size: 1.6rem;
+export const Title = styled(Heading)`
+  margin: 0 0 0 -40px;
 `;
 
-const SectionsTransition = posed.div({
-  enter: { staggerChildren: 50 },
-  exit: { staggerChildren: 50 }
-});
+export const LinkWrapper = styled(LinkTransition)`
+  position: relative;
+`;
+
+export const SubHeading = styled(NavLink)`
+  ${linkStyles}
+  padding: 2px 15px 5px 0;
+  font-size: 1.6rem;
+  &:active + div {
+    opacity: 1;
+  }
+`;
+
+export const Beam = styled.div`
+  content: "";
+  background-color: white;
+  position: absolute;
+  opacity: 0;
+  box-shadow: 0 0 4px 2px;
+  height: 1px;
+  width: 60px;
+  top: 34px;
+  transition: opacity 0.15s;
+  z-index: 999;
+`;
 
 export const Sections = styled(SectionsTransition)`
   display: flex;
@@ -30,7 +56,6 @@ export const Sections = styled(SectionsTransition)`
   align-items: flex-end;
   height: 260px;
   min-width: 260px;
-  padding-right: 15px;
   border-right: 1px solid #707070;
   margin: 75px 25px 0 0;
   justify-content: space-between;
