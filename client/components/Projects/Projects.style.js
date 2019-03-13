@@ -1,6 +1,7 @@
 import styled from "styled-components";
 
 import { Heading, Copy, linkStyles } from "../SharedStyles.style";
+import posed from "react-pose";
 
 export const Container = styled.div`
   display: flex;
@@ -14,7 +15,12 @@ export const Main = styled(Copy)`
   width: 60%;
 `;
 
-export const Docs = styled.div`
+const DocsTransition = posed.div({
+  enter: { staggerChildren: 50 },
+  exit: { staggerChildren: 50 }
+});
+
+export const Docs = styled(DocsTransition)`
   display: flex;
   flex-direction: column;
   height: 260px;
@@ -22,6 +28,11 @@ export const Docs = styled.div`
   justify-content: space-around;
 `;
 
-export const Link = styled.a`
+const LinkTransition = posed.a({
+  enter: { x: 0, opacity: 1 },
+  exit: { x: 30, opacity: 0 }
+});
+
+export const Link = styled(LinkTransition)`
   ${linkStyles}
 `;

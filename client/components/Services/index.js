@@ -11,7 +11,9 @@ import Main from "./Main.js";
 
 class Services extends React.Component {
   componentWillMount() {
-    this.props.history.push("/services");
+    if (this.props.location.pathname !== "/services") {
+      this.props.history.push("/services");
+    }
   }
   render() {
     return (

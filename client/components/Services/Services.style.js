@@ -1,5 +1,6 @@
 import styled from "styled-components";
 import { Link } from "react-router-dom";
+import posed from "react-pose";
 
 import { linkStyles } from "../SharedStyles.style";
 
@@ -8,12 +9,22 @@ export const Container = styled.div`
   justify-content: space-between;
 `;
 
-export const SubHeading = styled(Link)`
+const SubHeadingTransition = posed.a({
+  enter: { y: 0, opacity: 1 },
+  exit: { y: 10, opacity: 0 }
+});
+
+export const SubHeading = styled(SubHeadingTransition)`
   ${linkStyles}
   font-size: 1.6rem;
 `;
 
-export const Sections = styled.div`
+const SectionsTransition = posed.div({
+  enter: { staggerChildren: 50 },
+  exit: { staggerChildren: 50 }
+});
+
+export const Sections = styled(SectionsTransition)`
   display: flex;
   flex-direction: column;
   align-items: flex-end;

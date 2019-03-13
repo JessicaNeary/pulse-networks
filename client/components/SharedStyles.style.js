@@ -1,5 +1,11 @@
 import styled, { css } from "styled-components";
+import posed from "react-pose";
 import { ifProp } from "styled-tools";
+
+export const FadeTransition = posed.div({
+  enter: { opacity: 1, delay: 50 },
+  exit: { opacity: 0 }
+});
 
 export const Heading = styled.h1`
   color: #f7f7f7;

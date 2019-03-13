@@ -21,14 +21,7 @@ import Contact from "./components/Contact";
 document.addEventListener("DOMContentLoaded", () => {
   ReactDOM.render(
     <BrowserRouter>
-      <App>
-        <Switch>
-          <Route exact path="/" component={Home} />
-          <Route path="/services" component={Services} />
-          <Route c path="/projects" component={Projects} />
-          <Route path="/contact" component={Contact} />
-        </Switch>
-      </App>
+      <App />
     </BrowserRouter>,
     document.getElementById("app")
   );
