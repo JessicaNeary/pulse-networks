@@ -1,5 +1,5 @@
 import React from "react";
-import { Switch, Route } from "react-router-dom";
+import { PoseGroup } from "react-pose";
 
 import Planning from "./content/1-Planning";
 import Construction from "./content/2-Construction";
@@ -12,53 +12,58 @@ import {
   Sections,
   LinkWrapper,
   SubHeading,
-  Beam
+  Beam,
+  BodyTransition,
+  Content
 } from "./Services.style";
 import Main from "./Main.js";
 
 class Services extends React.Component {
+  state = {
+    showSection: "0"
+  };
+  changeTo = index => () => {
+    this.setState({ showSection: index });
+  };
   render() {
     return (
       <Container>
         <Sections>
-          <SectionLink to={`/services/build`}>Products</SectionLink>
-          <SectionLink to={`/services/planning`}>Planning & Design</SectionLink>
-          <SectionLink to={`/services/construct`}>Construction</SectionLink>
-          <SectionLink to={`/services/install`}>Installation</SectionLink>
-          <SectionLink to={`/services/project`}>
+          <SectionLink onClick={this.changeTo("1")}>Products</SectionLink>
+          <SectionLink onClick={this.changeTo("2")}>
+            Planning & Design
+          </SectionLink>
+          <SectionLink onClick={this.changeTo("3")}>Construction</SectionLink>
+          <SectionLink onClick={this.changeTo("4")}>Installation</SectionLink>
+          <SectionLink onClick={this.changeTo("5")}>
             Projects Management
           </SectionLink>
         </Sections>
-        <div>
+        <Content>
           <Title>Services</Title>
-          <Body />
-        </div>
+          <PoseGroup enterPose="center" exitPose="right" preEnterPose="left">
+            <BodyTransition key={this.state.showSection}>
+              {BodyContent[this.state.showSection]}
+            </BodyTransition>
+          </PoseGroup>
+        </Content>
       </Container>
     );
   }
 }
 
-const Body = () => (
-  <Switch>
-    <Route exact path={`/services`} component={Main} />
-    <Route path={`/services/build`} component={Build} />
-    <Route path={`/services/planning`} component={Planning} />
-    <Route path={`/services/construct`} component={Construction} />
-    <Route path={`/services/install`} component={Installation} />
-    <Route path={`/services/project`} component={ProjectManagement} />
-  </Switch>
-);
+const BodyContent = [
+  <Main />,
+  <Build />,
+  <Planning />,
+  <Construction />,
+  <Installation />,
+  <ProjectManagement />
+];
 
-export const SectionLink = ({ to, children }) => (
-  <LinkWrapper>
-    <SubHeading
-      activeStyle={{
-        boxShadow: " 6px 0 5px -4px white"
-      }}
-      to={to}
-    >
-      {children}
-    </SubHeading>
+export const SectionLink = ({ onClick, children }) => (
+  <LinkWrapper onClick={onClick}>
+    <SubHeading>{children}</SubHeading>
     <Beam />
   </LinkWrapper>
 );

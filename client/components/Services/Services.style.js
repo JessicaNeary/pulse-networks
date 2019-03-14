@@ -1,6 +1,5 @@
 import React from "react";
 import styled from "styled-components";
-import { NavLink } from "react-router-dom";
 import posed from "react-pose";
 
 import { Heading, linkStyles } from "../SharedStyles.style";
@@ -13,6 +12,12 @@ const LinkTransition = posed.div({
 const SectionsTransition = posed.div({
   enter: { staggerChildren: 50 },
   exit: { staggerChildren: 50 }
+});
+
+export const BodyTransition = posed.div({
+  center: { x: "0", transition: { ease: "easeOut", duration: 400 } },
+  right: { x: "150%", transition: { ease: "easeOut", duration: 400 } },
+  left: { x: "-100%" }
 });
 
 export const Container = styled.div`
@@ -28,13 +33,20 @@ export const LinkWrapper = styled(LinkTransition)`
   position: relative;
 `;
 
-export const SubHeading = styled(NavLink)`
+export const SubHeading = styled.div`
   ${linkStyles}
+  cursor: pointer;
   padding: 2px 15px 5px 0;
   font-size: 1.6rem;
   &:active + div {
     opacity: 1;
   }
+`;
+
+export const Content = styled.div`
+  overflow: hidden;
+  padding-left: 25px;
+  min-height: 510px;
 `;
 
 export const Beam = styled.div`
@@ -57,14 +69,13 @@ export const Sections = styled(SectionsTransition)`
   height: 260px;
   min-width: 260px;
   border-right: 1px solid #707070;
-  margin: 75px 25px 0 0;
+  margin: 75px 0 0 0;
   justify-content: space-between;
 `;
 
 export const Item = styled.div`
   display: flex;
   align-items: flex-start;
-  min-height: 450px;
 `;
 
 export const Icon = styled.img`

@@ -12,11 +12,6 @@ import Contact from "./Contact";
 import { FadeTransition } from "./SharedStyles.style";
 
 class App extends Component {
-  componentWillMount() {
-    if (this.props.location.pathname !== "/services/.+") {
-      this.props.history.push("/services");
-    }
-  }
   render() {
     return (
       <div>
@@ -25,10 +20,10 @@ class App extends Component {
         <PoseGroup>
           <FadeTransition key={this.props.location.pathname}>
             <Switch location={this.props.location}>
-              <Route exact path="/" key="home" component={Home} />
-              <Route path="/services" key="services" component={Services} />
-              <Route path="/projects" key="projects" component={Projects} />
-              <Route path="/contact" key="contact" component={Contact} />
+              <Route exact path="/" key="/" component={Home} />
+              <Route path="/services" key="/services" component={Services} />
+              <Route path="/projects" key="/projects" component={Projects} />
+              <Route path="/contact" key="/contact" component={Contact} />
             </Switch>
           </FadeTransition>
         </PoseGroup>
