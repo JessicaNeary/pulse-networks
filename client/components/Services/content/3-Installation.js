@@ -5,7 +5,7 @@ import { Copy } from "../../SharedStyles.style";
 const Installation = () => {
   return (
     <Item>
-      <Icon src="/images/services/install.svg" width="23%" />
+      <Icon src="/images/services/install.svg" width="13%" />
       <Copy>
         <p>
           Pulse Networks works to tight deadlines to 'lighten up' client

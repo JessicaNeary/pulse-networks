@@ -14,6 +14,11 @@ const SectionsTransition = posed.div({
   exit: { staggerChildren: 50 }
 });
 
+const BeamTransition = posed.div({
+  show: { opacity: 1, duration: 100 },
+  hide: { opacity: 0, duration: 100 }
+});
+
 export const BodyTransition = posed.div({
   center: { x: "0", transition: { ease: "easeOut", duration: 400 } },
   right: { x: "150%", transition: { ease: "easeOut", duration: 400 } },
@@ -26,7 +31,7 @@ export const Container = styled.div`
 `;
 
 export const Title = styled(Heading)`
-  margin: 0 0 0 -40px;
+  margin: 0 0 0 -80px;
 `;
 
 export const LinkWrapper = styled(LinkTransition)`
@@ -38,9 +43,6 @@ export const SubHeading = styled.div`
   cursor: pointer;
   padding: 2px 15px 5px 0;
   font-size: 1.6rem;
-  &:active + div {
-    opacity: 1;
-  }
 `;
 
 export const Content = styled.div`
@@ -49,15 +51,15 @@ export const Content = styled.div`
   min-height: 510px;
 `;
 
-export const Beam = styled.div`
+export const Beam = styled(BeamTransition)`
   content: "";
   background-color: white;
   position: absolute;
-  opacity: 0;
   box-shadow: 0 0 4px 2px;
-  height: 1px;
-  width: 60px;
-  top: 34px;
+  height: 32px;
+  width: 1px;
+  top: 2px;
+  right: -1px;
   transition: opacity 0.15s;
   z-index: 999;
 `;
@@ -82,5 +84,5 @@ export const Icon = styled.img`
   display: block;
   margin: 0 auto;
   padding-top: 10px;
-  max-width: ${prop => prop.width || "30%"};
+  width: 125px;
 `;

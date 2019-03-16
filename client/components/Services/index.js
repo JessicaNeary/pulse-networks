@@ -26,24 +26,31 @@ class Services extends React.Component {
     this.setState({ showSection: index });
   };
   render() {
+    const current = this.state.showSection;
     return (
       <Container>
         <Sections>
-          <SectionLink onClick={this.changeTo("1")}>Products</SectionLink>
-          <SectionLink onClick={this.changeTo("2")}>
+          <SectionLink active={current === "1"} onClick={this.changeTo("1")}>
+            Products
+          </SectionLink>
+          <SectionLink active={current === "2"} onClick={this.changeTo("2")}>
             Planning & Design
           </SectionLink>
-          <SectionLink onClick={this.changeTo("3")}>Construction</SectionLink>
-          <SectionLink onClick={this.changeTo("4")}>Installation</SectionLink>
-          <SectionLink onClick={this.changeTo("5")}>
+          <SectionLink active={current === "3"} onClick={this.changeTo("3")}>
+            Construction
+          </SectionLink>
+          <SectionLink active={current === "4"} onClick={this.changeTo("4")}>
+            Installation
+          </SectionLink>
+          <SectionLink active={current === "5"} onClick={this.changeTo("5")}>
             Projects Management
           </SectionLink>
         </Sections>
         <Content>
           <Title>Services</Title>
           <PoseGroup enterPose="center" exitPose="right" preEnterPose="left">
-            <BodyTransition key={this.state.showSection}>
-              {BodyContent[this.state.showSection]}
+            <BodyTransition key={current}>
+              {BodyContent[current]}
             </BodyTransition>
           </PoseGroup>
         </Content>
@@ -61,10 +68,10 @@ const BodyContent = [
   <ProjectManagement />
 ];
 
-export const SectionLink = ({ onClick, children }) => (
+export const SectionLink = ({ onClick, active, children }) => (
   <LinkWrapper onClick={onClick}>
     <SubHeading>{children}</SubHeading>
-    <Beam />
+    <Beam pose={active ? "show" : "hide"} />
   </LinkWrapper>
 );
 

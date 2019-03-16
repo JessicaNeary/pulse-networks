@@ -5,7 +5,7 @@ import { Copy } from "../../SharedStyles.style";
 const ProjectManagement = () => {
   return (
     <Item>
-      <Icon src="/images/services/project.svg" width="38%" />
+      <Icon src="/images/services/project.svg" width="21%" />
       <Copy>
         <p>
           The key to our success is that we manage projects right throughout
