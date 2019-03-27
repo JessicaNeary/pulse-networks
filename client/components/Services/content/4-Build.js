@@ -5,7 +5,7 @@ import { Copy } from "../../SharedStyles.style";
 const Build = () => {
   return (
     <Item>
-      <Icon src="/images/services/build.svg" width="21%" />
+      <Icon src="/images/services/products.svg" width="21%" />
       <Copy>
         <p>Replace me with products copy</p>
         <p>

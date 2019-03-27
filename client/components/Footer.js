@@ -2,8 +2,6 @@ import React from "react";
 import styled from "styled-components";
 
 const Container = styled.div`
-  position: relative;
-  bottom: 0;
   margin-top: 40px;
   border-top: 1px solid #c4c2c2;
   padding: 0px 5px;
