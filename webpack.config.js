@@ -1,43 +1,42 @@
 const webpack = require("webpack");
 
 module.exports = {
-  entry: './client/index.js',
+  entry: "./client/index.js",
   devServer: {
     hot: true,
-    historyApiFallback: true,
+    historyApiFallback: true
   },
-  plugins: [
-    new webpack.HotModuleReplacementPlugin()
-  ],
+  plugins: [new webpack.HotModuleReplacementPlugin()],
   output: {
-    path: './public',
-    filename: 'bundle.js',
+    path: "./public",
+    filename: "bundle.js",
+    publicPath: "/"
   },
   module: {
     loaders: [
       {
         test: /\.jsx?$/,
-        loader: 'babel-loader',
-        exclude: /node_modules/,
+        loader: "babel-loader",
+        exclude: /node_modules/
       },
       {
         test: /\.css$/,
-        loaders: ['style-loader', 'css-loader'],
+        loaders: ["style-loader", "css-loader"]
       },
       {
         test: /\.svg$/,
         loaders: ["babel-loader", "react-svg-loader"],
         options: {
-          jsx: true,
+          jsx: true
         }
       }
     ]
   },
   resolve: {
-    extensions: ['', '.js', '.jsx'],
+    extensions: ["", ".js", ".jsx"],
     alias: {
-      'react-dom': '@hot-loader/react-dom'
+      "react-dom": "@hot-loader/react-dom"
     }
   },
-  devtool: 'source-map'
-}
+  devtool: "source-map"
+};
