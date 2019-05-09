@@ -36,6 +36,7 @@ export const Container = styled.div`
 
 export const Title = styled(Heading)`
   margin: 0 0 0 -80px;
+  padding-bottom: 15px;
   cursor: pointer;
 `;
 
@@ -76,7 +77,7 @@ export const Sections = styled(SectionsTransition)`
   height: 260px;
   min-width: 260px;
   border-right: 1px solid #707070;
-  margin: 75px 0 0 0;
+  margin: 90px 0 0 0;
   justify-content: space-between;
 `;
 
@@ -88,6 +89,6 @@ export const Item = styled.div`
 export const Icon = styled.img`
   display: block;
   margin: 0 auto;
-  padding-top: 10px;
+  padding-top: 20px;
   width: 125px;
 `;

@@ -8,11 +8,16 @@ const ProjectManagement = () => {
       <Icon src="/images/services/project.svg" width="21%" />
       <Copy>
         <p>
-          The key to our success is that we manage projects right throughout
-          their life cycle; from initial client brief through to the As Build
-          handover. At all times we know how a project is progressing, if there
-          are any potential roadblocks and how we might mitigate them. We
-          combine management skills with a first hand knowledge of design,
+          The key to our success is that we manage projects throughout their
+          life cycle, from initial client brief right through to the As Build
+          handover.{" "}
+        </p>
+        <p>
+          At all times we know how a project is progressing, if there are any
+          potential roadblocks and how we might mitigate them.
+        </p>
+        <p>
+          We combine management skills with a first hand knowledge of design,
           construction and installation enabling quick decision making and
           approvals.
         </p>

@@ -4,7 +4,7 @@ import { PoseGroup } from "react-pose";
 import Planning from "./content/1-Planning";
 import Construction from "./content/2-Construction";
 import Installation from "./content/3-Installation";
-import Build from "./content/4-Build";
+import Products from "./content/4-Products";
 import ProjectManagement from "./content/5-ProjectManagement";
 import {
   Container,
@@ -61,7 +61,7 @@ class Services extends React.Component {
 
 const BodyContent = [
   <Main />,
-  <Build />,
+  <Products />,
   <Planning />,
   <Construction />,
   <Installation />,

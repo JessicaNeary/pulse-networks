@@ -9,23 +9,17 @@ const Planning = () => {
       <Icon src="/images/services/planning.svg" />
       <Copy>
         <p>
-          You wouldn't go on holiday without booking accommodation; an Architect
-          wouldn't build a house without consulting with a surveyor and the
-          council. Why is it then that too many companies let their contractors
-          loose to dig up the streets without proper planning and design and
-          then blame them when things go wrong.
+          Pulse Networks provides detailed planning and design so that there are
+          no surprises.
         </p>
         <p>
-          Pulse Networks works with it's clients to provide detailed planning
-          and design so that there are no surprises. All aspects of construction
-          are documented so that the contractor knows what to do and what is
-          expected.
+          All aspects are documented so that contractors and staff know what to
+          do and what is expected.
         </p>
         <p>
-          Our Planning & Design services include: Feasibility Studies, Route
-          Surveys, Consent Applications, Obstruction plans, Duct Plans, Network
-          Design, Fibre Grid, Fibre Schematic, Fibre Splice plans and Rack
-          Layouts.
+          Our services include feasibility studies, route surveys, consent
+          applications and obstructions plans, as well as duct plans, network
+          design, fibre schematics and equipment layouts.
         </p>
       </Copy>
     </Item>
