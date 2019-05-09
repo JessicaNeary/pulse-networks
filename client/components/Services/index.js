@@ -43,7 +43,7 @@ class Services extends React.Component {
             Installation
           </SectionLink>
           <SectionLink active={current === "5"} onClick={this.changeTo("5")}>
-            Projects Management
+            Project Management
           </SectionLink>
         </Sections>
         <Content>

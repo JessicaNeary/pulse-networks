@@ -20,11 +20,11 @@ const BeamTransition = posed.div({
 });
 
 export const BodyTransition = posed.div({
-  center: { x: "0", transition: { ease: "easeOut", duration: 400 } },
+  center: { x: "0", transition: { ease: "easeOut", duration: 300 } },
   right: {
     x: "150%",
     opacity: 0,
-    transition: { ease: "easeOut", duration: 400 }
+    transition: { ease: "easeOut", duration: 300 }
   },
   left: { x: "-100%" }
 });
