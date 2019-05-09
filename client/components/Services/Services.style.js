@@ -36,6 +36,7 @@ export const Container = styled.div`
 
 export const Title = styled(Heading)`
   margin: 0 0 0 -80px;
+  cursor: pointer;
 `;
 
 export const LinkWrapper = styled(LinkTransition)`

@@ -47,7 +47,7 @@ class Services extends React.Component {
           </SectionLink>
         </Sections>
         <Content>
-          <Title>Services</Title>
+          <Title onClick={this.changeTo("0")}>Services</Title>
           <PoseGroup enterPose="center" exitPose="right" preEnterPose="left">
             <BodyTransition key={current}>
               {BodyContent[current]}

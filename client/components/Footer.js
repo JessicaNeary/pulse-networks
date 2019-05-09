@@ -1,6 +1,8 @@
 import React from "react";
 import styled from "styled-components";
 
+import { linkStyles } from "./SharedStyles.style";
+
 const Container = styled.div`
   margin-top: 40px;
   border-top: 1px solid #c4c2c2;
@@ -11,7 +13,10 @@ const Container = styled.div`
   @media (max-width: 460px) {
       padding: 0px 10px;
       font-size: 0.7em; }
+`;
 
+const Link = styled.a`
+  ${linkStyles}
 `;
 
 const Footer = () => {
@@ -20,10 +25,7 @@ const Footer = () => {
       <p>Copyright © 2010. Pulse Networks.</p>
       <p>
         Website created by
-        <a className="link" href="https://github.com/JessicaNeary">
-          {" "}
-          Jessica Neary
-        </a>
+        <Link href="https://github.com/JessicaNeary"> Jessica Neary</Link>
       </p>
     </Container>
   );
