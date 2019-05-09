@@ -21,10 +21,10 @@ class App extends Component {
           <PoseGroup>
             <FadeTransition key={this.props.location.pathname}>
               <Switch location={this.props.location}>
-                <Route exact path="/" key="/" component={Home} />
                 <Route path="/services" key="/services" component={Services} />
                 <Route path="/projects" key="/projects" component={Projects} />
                 <Route path="/contact" key="/contact" component={Contact} />
+                <Route path="/" key="/" component={Home} />
               </Switch>
             </FadeTransition>
           </PoseGroup>
