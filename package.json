@@ -7,9 +7,11 @@
   "scripts": {
     "build": "webpack",
     "dev": "webpack-dev-server --content-base public/ --hot --inline",
+    "start": "webpack-dev-server --content-base public/",
     "watch": "nodemon --watch server server/index & webpack --watch",
     "test": "tape -r babel-register 'test/**/*.test.js' | tap-spec",
-    "build-css": "node-sass -w public/css/style.scss public/css/main.css"
+    "build-css": "node-sass -w public/css/style.scss public/css/main.css",
+    "heroku-postbuild": "webpack -p --config ./webpack.config.js --progress"
   },
   "babel": {
     "presets": [
