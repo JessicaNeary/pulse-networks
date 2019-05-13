@@ -8,7 +8,7 @@ const Container = styled.div`
   border-top: 1px solid #c4c2c2;
   padding: 0px 5px;
   display: flex;
-  justify-content: space-between;
+  justify-content: flex-end;
   font-size: 0.8em; }
   @media (max-width: 460px) {
       padding: 0px 10px;
@@ -22,7 +22,6 @@ const Link = styled.a`
 const Footer = () => {
   return (
     <Container>
-      <p>Copyright © 2010. Pulse Networks.</p>
       <p>
         Website created by
         <Link href="https://github.com/JessicaNeary"> Jessica Neary</Link>
