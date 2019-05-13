@@ -4,7 +4,7 @@ module.exports = {
   entry: "./client/index.js",
   devServer: {
     hot: true,
-    historyApiFallback: "public/index.html"
+    historyApiFallback: true
   },
   plugins: [new webpack.HotModuleReplacementPlugin()],
   output: {
