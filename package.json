@@ -9,7 +9,7 @@
     "dev": "webpack-dev-server --content-base public/ --hot --inline",
     "watch": "nodemon --watch server server/index & webpack --watch",
     "test": "tape -r babel-register 'test/**/*.test.js' | tap-spec",
-    "build-css": "node-sass -w public/css/style.scss public/css/main.css",
+    "build-css": "node-sass -w public/css/style.scss public/css/main.css"
   },
   "babel": {
     "presets": [
