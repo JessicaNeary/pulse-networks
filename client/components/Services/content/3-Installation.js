@@ -17,7 +17,7 @@ const Installation = () => {
         <p>
           Over the years we have invested in the very latest jetting equipment
           from Europe, allowing us to go where no installers have been before.
-          Our blow cable distances are up to 2.5kms, and we can install
+          Our cable blowing distances are up to 2.5kms, and we can install
           microducts in existing ducts, even over resident cables, significantly
           increasing duct capacity and deferring expensive overlays.
         </p>
