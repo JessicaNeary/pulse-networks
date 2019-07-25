@@ -1,12 +1,14 @@
 import React from "react";
-import { Icon, Item } from "../Services.style";
+import { Icon, Item, Title } from "../Services.style";
 import { Copy } from "../../SharedStyles.style";
 
-const Products = () => {
+const Products = ({ mobile }) => {
+  console.log("products", mobile);
   return (
-    <Item>
+    <Item mobile={mobile}>
       <Icon src="/images/services/products.svg" width="21%" />
-      <Copy>
+      {mobile && <Title mobile={mobile}>Products</Title>}
+      <Copy center={mobile}>
         <p>
           Pulse Networks sources products locally and internationally, and has a
           long associate with the leading industry suppliers and manufacturers.

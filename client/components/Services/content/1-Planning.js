@@ -1,13 +1,14 @@
 import React from "react";
 
-import { Item, Icon } from "../Services.style";
+import { Item, Icon, Title } from "../Services.style";
 import { Copy } from "../../SharedStyles.style";
 
-const Planning = () => {
+const Planning = ({ mobile }) => {
   return (
-    <Item>
+    <Item mobile={mobile}>
       <Icon src="/images/services/planning.svg" />
-      <Copy>
+      {mobile && <Title mobile={mobile}>Planning</Title>}
+      <Copy center={mobile}>
         <p>
           Pulse Networks provides detailed planning and design so that there are
           no surprises.

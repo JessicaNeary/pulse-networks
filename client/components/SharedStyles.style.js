@@ -35,10 +35,10 @@ export const Heading = styled.h1`
 `;
 
 export const Copy = styled.div`
-  text-align: left;
-  padding: 0 30px 20px ${ifProp("right", "50px", "30px")};
   font-family: Roboto Condensed, sans-serif;
   color: #cecece;
+  text-align: ${ifProp("center", "center", "left")};
+  padding: 0 30px 20px ${ifProp("right", "50px", "30px")};
   font-size: 1.03em;
   line-height: 1.3em;
 `;

@@ -1,12 +1,13 @@
 import React from "react";
-import { Icon, Item } from "../Services.style";
+import { Icon, Item, Title } from "../Services.style";
 import { Copy } from "../../SharedStyles.style";
 
-const ProjectManagement = () => {
+const ProjectManagement = ({ mobile }) => {
   return (
-    <Item>
+    <Item mobile={mobile}>
       <Icon src="/images/services/project.svg" width="21%" />
-      <Copy>
+      {mobile && <Title mobile={mobile}>Project Management</Title>}
+      <Copy center={mobile}>
         <p>
           The key to our success is that we manage projects throughout their
           life cycle, from initial client brief right through to the As Build

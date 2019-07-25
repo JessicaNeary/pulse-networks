@@ -1,6 +1,7 @@
 import React from "react";
 import styled from "styled-components";
 import posed from "react-pose";
+import { ifProp } from "styled-tools";
 
 import { Heading, linkStyles } from "../SharedStyles.style";
 
@@ -34,10 +35,28 @@ export const Container = styled.div`
   justify-content: space-between;
 `;
 
+export const MobileHeading = styled(Heading)`
+  font-size: 4rem;
+  margin: 0 0 0 calc(-100vw + 230px);
+`;
+
 export const Title = styled(Heading)`
-  margin: 0 0 0 -80px;
-  padding-bottom: 15px;
-  cursor: pointer;
+  ${ifProp(
+    "mobile",
+    `
+    position: relative;
+    top: -30px;
+    text-shadow: 0px 3px 5px #000;
+    margin: 0 0 -15px;
+    font-weight: 300;
+    z-index: 99;
+  `,
+    `
+    margin: 0 0 0 -80px;
+    padding-bottom: 15px;
+    cursor: pointer;
+  `
+  )}
 `;
 
 export const LinkWrapper = styled(LinkTransition)`
@@ -83,7 +102,14 @@ export const Sections = styled(SectionsTransition)`
 
 export const Item = styled.div`
   display: flex;
-  align-items: flex-start;
+  ${ifProp(
+    "mobile",
+    `
+    flex-direction: column;
+    margin-bottom: 80px;
+    `,
+    "align-items: flex-start;"
+  )}
 `;
 
 export const Icon = styled.img`
