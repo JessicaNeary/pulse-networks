@@ -4,15 +4,25 @@ import { Heading, Copy, linkStyles } from "../SharedStyles.style";
 import posed from "react-pose";
 
 export const Container = styled.div`
-  display: flex;
+  @media (min-width: 769px) {
+    display: flex;
+  }
 `;
 
 export const Title = styled(Heading)`
   margin: 20px 0 30px 10px;
+  @media (max-width: 768px) {
+    margin-top: 50px;
+  }
 `;
 
 export const Main = styled(Copy)`
   width: 60%;
+  @media (max-width: 768px) {
+    font-size: 1.25em;
+    text-align: center;
+    width: auto;
+  }
 `;
 
 const DocsTransition = posed.div({
@@ -26,6 +36,11 @@ export const Docs = styled(DocsTransition)`
   height: 260px;
   margin-top: 75px;
   justify-content: space-around;
+  @media (max-width: 768px) {
+    height: 800px;
+    margin: 50px 10%;
+    justify-content: space-between;
+  }
 `;
 
 const LinkTransition = posed.a({
@@ -35,4 +50,8 @@ const LinkTransition = posed.a({
 
 export const Link = styled(LinkTransition)`
   ${linkStyles}
+  @media (max-width: 768px) {
+    font-size: 1.75rem;
+    line-height: 2.5rem;
+  }
 `;

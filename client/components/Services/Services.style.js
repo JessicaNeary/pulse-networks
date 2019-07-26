@@ -45,7 +45,7 @@ export const Title = styled(Heading)`
     "mobile",
     `
     position: relative;
-    top: -30px;
+    top: -40px;
     text-shadow: 0px 3px 5px #000;
     margin: 0 0 -15px;
     font-weight: 300;

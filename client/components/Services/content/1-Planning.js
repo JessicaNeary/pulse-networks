@@ -1,13 +1,19 @@
 import React from "react";
+import styled from "styled-components";
 
 import { Item, Icon, Title } from "../Services.style";
 import { Copy } from "../../SharedStyles.style";
+
+const PlanningTitle = styled(Title)`
+  margin: 0 0 -25px;
+  top: -25px;
+`;
 
 const Planning = ({ mobile }) => {
   return (
     <Item mobile={mobile}>
       <Icon src="/images/services/planning.svg" />
-      {mobile && <Title mobile={mobile}>Planning</Title>}
+      {mobile && <PlanningTitle mobile={mobile}>Planning</PlanningTitle>}
       <Copy center={mobile}>
         <p>
           Pulse Networks provides detailed planning and design so that there are

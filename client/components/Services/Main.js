@@ -4,9 +4,8 @@ import styled from "styled-components";
 import { Copy } from "../SharedStyles.style";
 
 const MobileCopy = styled(Copy)`
-  font-size: 1.15em;
-  text-align: right;
-  padding: 0 20px 60px 30px;
+  font-size: 1.25em;
+  padding: 15px 30px 80px;
 `;
 
 const Main = ({ mobile }) => {
