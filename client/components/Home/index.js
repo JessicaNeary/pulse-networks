@@ -6,6 +6,9 @@ import { Heading, Copy } from "../SharedStyles.style";
 const Container = styled.div`
   margin-left: 21%;
   text-align: left;
+  @media (max-width: 768px) {
+    margin-left: 15%;
+  }
 `;
 
 const Title = styled(Heading)`
@@ -17,6 +20,10 @@ const Body = styled(Copy)`
   padding: 0;
   margin-left: -17px;
   width: 80%;
+  @media (max-width: 768px) {
+    width: 90%;
+    gitfont-size: 1.25em;
+  }
 `;
 
 class Home extends React.Component {
