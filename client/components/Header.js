@@ -16,6 +16,9 @@ const Nav = styled.ul`
     text-align: center;
     position: relative;
   }
+  @media (max-width: 768px) {
+    padding: 10px 0;
+  }
 `;
 
 const Beam = styled.div`
