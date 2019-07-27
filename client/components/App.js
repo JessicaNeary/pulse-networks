@@ -7,9 +7,13 @@ import Footer from "./Footer";
 import Banner from "./Banner";
 import Home from "./Home";
 import Services from "./Services";
+import MobileServices from "./Services/mobileServices";
 import Projects from "./Projects";
 import Contact from "./Contact";
+import isMobile from "../isMobile";
 import { Page, FadeTransition } from "./SharedStyles.style";
+
+const ServicesComponent = isMobile() ? MobileServices : Services;
 
 class App extends Component {
   render() {
@@ -21,7 +25,11 @@ class App extends Component {
           <PoseGroup>
             <FadeTransition key={this.props.location.pathname}>
               <Switch location={this.props.location}>
-                <Route path="/services" key="/services" component={Services} />
+                <Route
+                  path="/services"
+                  key="/services"
+                  component={ServicesComponent}
+                />
                 <Route path="/projects" key="/projects" component={Projects} />
                 <Route path="/contact" key="/contact" component={Contact} />
                 <Route path="/" key="/" component={Home} />

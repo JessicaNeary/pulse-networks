@@ -34,10 +34,24 @@ export const Container = styled.div`
   justify-content: space-between;
 `;
 
+export const MobileHeading = styled(Heading)`
+  font-size: 4rem;
+  margin: 0 0 0 calc(-100vw + 230px);
+`;
+
 export const Title = styled(Heading)`
   margin: 0 0 0 -80px;
   padding-bottom: 15px;
   cursor: pointer;
+  @media (max-width: 768px) {
+    padding: 0;
+    position: relative;
+    top: -40px;
+    text-shadow: 0px 3px 5px #000;
+    margin: 0 0 -15px;
+    font-weight: 300;
+    z-index: 99;
+  }
 `;
 
 export const LinkWrapper = styled(LinkTransition)`
@@ -84,6 +98,11 @@ export const Sections = styled(SectionsTransition)`
 export const Item = styled.div`
   display: flex;
   align-items: flex-start;
+  @media (max-width: 768px) {
+    align-items: stretch;
+    flex-direction: column;
+    margin-bottom: 80px;
+  }
 `;
 
 export const Icon = styled.img`

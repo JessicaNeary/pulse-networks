@@ -1,12 +1,13 @@
 import React from "react";
-import { Icon, Item } from "../Services.style";
+import { Icon, Item, Title } from "../Services.style";
 import { Copy } from "../../SharedStyles.style";
 
-const Installation = () => {
+const Installation = ({ mobile }) => {
   return (
     <Item>
       <Icon src="/images/services/install.svg" width="13%" />
-      <Copy>
+      {mobile && <Title>Installation</Title>}
+      <Copy center={mobile}>
         <p>
           Pulse Networks works to tight deadlines to 'lighten up' client
           customers; we know that time is money and that the project doesn't

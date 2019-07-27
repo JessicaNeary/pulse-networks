@@ -1,12 +1,13 @@
 import React from "react";
-import { Icon, Item } from "../Services.style";
+import { Icon, Item, Title } from "../Services.style";
 import { Copy } from "../../SharedStyles.style";
 
-const Construction = () => {
+const Construction = ({ mobile }) => {
   return (
     <Item>
       <Icon src="/images/services/construct.svg" />
-      <Copy>
+      {mobile && <Title>Construction</Title>}
+      <Copy center={mobile}>
         <p>
           Pulse Networks has worked with a number of civil engineering companies
           through out NZ to build outside plant networks. This work includes
