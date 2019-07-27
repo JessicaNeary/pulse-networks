@@ -5,15 +5,17 @@ import { Item, Icon, Title } from "../Services.style";
 import { Copy } from "../../SharedStyles.style";
 
 const PlanningTitle = styled(Title)`
-  margin: 0 0 -25px;
-  top: -25px;
+  @media (max-width: 768px) {
+    margin: 0 0 -25px;
+    top: -25px;
+  }
 `;
 
 const Planning = ({ mobile }) => {
   return (
-    <Item mobile={mobile}>
+    <Item>
       <Icon src="/images/services/planning.svg" />
-      {mobile && <PlanningTitle mobile={mobile}>Planning</PlanningTitle>}
+      {mobile && <PlanningTitle>Planning</PlanningTitle>}
       <Copy center={mobile}>
         <p>
           Pulse Networks provides detailed planning and design so that there are

@@ -4,9 +4,9 @@ import { Copy } from "../../SharedStyles.style";
 
 const Construction = ({ mobile }) => {
   return (
-    <Item mobile={mobile}>
+    <Item>
       <Icon src="/images/services/construct.svg" />
-      {mobile && <Title mobile={mobile}>Construction</Title>}
+      {mobile && <Title>Construction</Title>}
       <Copy center={mobile}>
         <p>
           Pulse Networks has worked with a number of civil engineering companies

@@ -4,9 +4,9 @@ import { Copy } from "../../SharedStyles.style";
 
 const Installation = ({ mobile }) => {
   return (
-    <Item mobile={mobile}>
+    <Item>
       <Icon src="/images/services/install.svg" width="13%" />
-      {mobile && <Title mobile={mobile}>Installation</Title>}
+      {mobile && <Title>Installation</Title>}
       <Copy center={mobile}>
         <p>
           Pulse Networks works to tight deadlines to 'lighten up' client

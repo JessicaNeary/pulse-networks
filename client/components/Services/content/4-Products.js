@@ -3,11 +3,10 @@ import { Icon, Item, Title } from "../Services.style";
 import { Copy } from "../../SharedStyles.style";
 
 const Products = ({ mobile }) => {
-  console.log("products", mobile);
   return (
-    <Item mobile={mobile}>
+    <Item>
       <Icon src="/images/services/products.svg" width="21%" />
-      {mobile && <Title mobile={mobile}>Products</Title>}
+      {mobile && <Title>Products</Title>}
       <Copy center={mobile}>
         <p>
           Pulse Networks sources products locally and internationally, and has a

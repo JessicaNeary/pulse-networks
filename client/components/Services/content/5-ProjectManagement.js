@@ -4,9 +4,9 @@ import { Copy } from "../../SharedStyles.style";
 
 const ProjectManagement = ({ mobile }) => {
   return (
-    <Item mobile={mobile}>
+    <Item>
       <Icon src="/images/services/project.svg" width="21%" />
-      {mobile && <Title mobile={mobile}>Project Management</Title>}
+      {mobile && <Title>Project Management</Title>}
       <Copy center={mobile}>
         <p>
           The key to our success is that we manage projects throughout their
