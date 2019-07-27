@@ -17,7 +17,6 @@ const ServicesComponent = isMobile() ? MobileServices : Services;
 
 class App extends Component {
   render() {
-    console.log(isMobile());
     return (
       <Page>
         <div>
