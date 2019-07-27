@@ -17,6 +17,7 @@ const ServicesComponent = isMobile() ? MobileServices : Services;
 
 class App extends Component {
   render() {
+    console.log("hosted on AWS");
     return (
       <Page>
         <div>
