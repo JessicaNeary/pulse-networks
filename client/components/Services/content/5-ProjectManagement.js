@@ -5,7 +5,11 @@ import { Copy } from "../../SharedStyles.style";
 const ProjectManagement = ({ mobile }) => {
   return (
     <Item>
-      <Icon src="/images/services/project.svg" width="21%" />
+      <Icon
+        alt="project management icon"
+        src="/images/services/project.svg"
+        width="21%"
+      />
       {mobile && <Title>Project Management</Title>}
       <Copy center={mobile}>
         <p>

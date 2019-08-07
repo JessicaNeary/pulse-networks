@@ -14,7 +14,7 @@ const PlanningTitle = styled(Title)`
 const Planning = ({ mobile }) => {
   return (
     <Item>
-      <Icon src="/images/services/planning.svg" />
+      <Icon src="/images/services/planning.svg" alt="planning icon" />
       {mobile && <PlanningTitle>Planning</PlanningTitle>}
       <Copy center={mobile}>
         <p>

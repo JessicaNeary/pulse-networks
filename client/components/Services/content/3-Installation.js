@@ -5,7 +5,11 @@ import { Copy } from "../../SharedStyles.style";
 const Installation = ({ mobile }) => {
   return (
     <Item>
-      <Icon src="/images/services/install.svg" width="13%" />
+      <Icon
+        src="/images/services/install.svg"
+        alt="installation icon"
+        width="13%"
+      />
       {mobile && <Title>Installation</Title>}
       <Copy center={mobile}>
         <p>

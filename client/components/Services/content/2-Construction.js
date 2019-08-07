@@ -5,7 +5,7 @@ import { Copy } from "../../SharedStyles.style";
 const Construction = ({ mobile }) => {
   return (
     <Item>
-      <Icon src="/images/services/construct.svg" />
+      <Icon src="/images/services/construct.svg" alt="construction icon" />
       {mobile && <Title>Construction</Title>}
       <Copy center={mobile}>
         <p>
