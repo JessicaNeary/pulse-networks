@@ -110,4 +110,5 @@ export const Icon = styled.img`
   margin: 0 auto;
   padding-top: 20px;
   min-width: 125px;
+  width: 125px;
 `;
