@@ -34,12 +34,13 @@ export const Heading = styled.h1`
   font-size: 3rem;
 `;
 
-export const Copy = styled.div`
+export const Copy = styled.h2`
   font-family: Roboto Condensed, sans-serif;
   color: #cecece;
   text-align: ${ifProp("center", "center", "left")};
   padding: 0 30px 20px ${ifProp("right", "50px", "30px")};
   font-size: 1.03em;
+  font-weight: 400;
   line-height: 1.3em;
 `;
 
