@@ -16,6 +16,16 @@ import { Page, FadeTransition } from "./SharedStyles.style";
 const ServicesComponent = isMobile() ? MobileServices : Services;
 
 class App extends Component {
+  componentDidMount() {
+    window.addEventListener('load', () => {
+    /* preloads images */
+    new Image().src = "images/services/products.svg"
+    new Image().src = "images/services/construct.svg"
+    new Image().src = "images/services/install.svg"
+    new Image().src = "images/services/planning.svg"
+    new Image().src = "images/services/project.svg"
+    });
+  }
   render() {
     return (
       <Page>
